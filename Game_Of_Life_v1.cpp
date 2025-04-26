@@ -2,70 +2,61 @@
 #include <vector>
 #include <thread>
 #include <chrono>
-#include <cstdlib>
+#include <winsock2.h>
 
-using namespace std;
+#pragma comment(lib, "ws2_32.lib")
 
 class GameOfLife {
 public:
-    GameOfLife(int rows, int cols) : rows(rows), cols(cols) {
-        board.resize(rows, vector<bool>(cols, false));
-    }
+    GameOfLife(int rows, int cols) : rows(rows), cols(cols), board(rows, std::vector<bool>(cols, false)) {}
 
     void setCell(int row, int col, bool alive) {
-        if (row >= 0 && row < rows && col >= 0 && col < cols) {
+        if (isValidCell(row, col)) {
             board[row][col] = alive;
         }
     }
 
-    void display() const {
-        system("clear"); // Use "cls" on Windows
-        for (const auto& row : board) {
-            for (bool cell : row) {
-                cout << (cell ? 'O' : '.') << ' ';
-            }
-            cout << endl;
-        }
-    }
-
     void update() {
-        vector<vector<bool>> newBoard = board;
+        auto newBoard = board;
 
         for (int i = 0; i < rows; ++i) {
             for (int j = 0; j < cols; ++j) {
                 int aliveNeighbors = countAliveNeighbors(i, j);
-                if (board[i][j]) {
-                    newBoard[i][j] = (aliveNeighbors == 2 || aliveNeighbors == 3);
-                } else {
-                    newBoard[i][j] = (aliveNeighbors == 3);
-                }
+                newBoard[i][j] = (board[i][j] && (aliveNeighbors == 2 || aliveNeighbors == 3)) ||
+                                 (!board[i][j] && aliveNeighbors == 3);
             }
         }
 
-        board = newBoard;
+        board = std::move(newBoard);
     }
 
-    void run(int iterations, int delay) {
-        for (int i = 0; i < iterations; ++i) {
-            display();
-            update();
-            std::this_thread::sleep_for(std::chrono::milliseconds(delay));
+    std::string boardToString() const {
+        std::string result = std::to_string(rows) + " " + std::to_string(cols) + "\n";
+        for (const auto& row : board) {
+            for (bool cell : row) {
+                result += cell ? '1' : '0';
+                result += ' ';
+            }
+            result += '\n';
         }
+        return result;
     }
 
 private:
     int rows, cols;
-    vector<vector<bool>> board;
+    std::vector<std::vector<bool>> board;
+
+    bool isValidCell(int row, int col) const {
+        return row >= 0 && row < rows && col >= 0 && col < cols;
+    }
 
     int countAliveNeighbors(int row, int col) const {
         int count = 0;
         for (int i = -1; i <= 1; ++i) {
             for (int j = -1; j <= 1; ++j) {
-                if (i == 0 && j == 0) continue; // Skip the cell itself
-                int newRow = row + i;
-                int newCol = col + j;
-                if (newRow >= 0 && newRow < rows && newCol >= 0 && newCol < cols) {
-                    count += board[newRow][newCol];
+                if (i == 0 && j == 0) continue;
+                if (isValidCell(row + i, col + j)) {
+                    count += board[row + i][col + j];
                 }
             }
         }
@@ -75,29 +66,54 @@ private:
 
 int main() {
     int rows, cols;
-    cout << "Enter number of rows: ";
-    cin >> rows;
-    cout << "Enter number of columns: ";
-    cin >> cols;
+    std::cout << "Enter number of rows: ";
+    std::cin >> rows;
+    std::cout << "Enter number of columns: ";
+    std::cin >> cols;
 
     GameOfLife game(rows, cols);
 
-    cout << "Enter initial state (row col alive(1)/dead(0), -1 to end):" << endl;
+    std::cout << "Enter initial state (row col alive(1)/dead(0), -1 to end):\n";
     while (true) {
         int r, c, alive;
-        cin >> r;
+        std::cin >> r;
         if (r == -1) break;
-        cin >> c >> alive;
+        std::cin >> c >> alive;
         game.setCell(r, c, alive == 1);
     }
 
-    int iterations, delay;
-    cout << "Enter number of iterations: ";
-    cin >> iterations;
-    cout << "Enter delay in milliseconds: ";
-    cin >> delay;
+    // Setup TCP server
+    WSADATA wsaData;
+    WSAStartup(MAKEWORD(2, 2), &wsaData);
+    SOCKET server = socket(AF_INET, SOCK_STREAM, 0);
 
-    game.run(iterations, delay);
+    sockaddr_in addr{};
+    addr.sin_family = AF_INET;
+    addr.sin_addr.s_addr = INADDR_ANY;
+    addr.sin_port = htons(12345);
+    bind(server, (sockaddr*)&addr, sizeof(addr));
+    listen(server, 1);
 
+    std::cout << "[SERVER] Waiting for client on port 12345...\n";
+    SOCKET client = accept(server, nullptr, nullptr);
+    std::cout << "[SERVER] Client connected!\n";
+
+    while (true) {
+        std::string data = game.boardToString();
+        int sent = send(client, data.c_str(), data.size(), 0);
+
+        if (sent == SOCKET_ERROR) {
+            std::cerr << "[SERVER] Send failed: " << WSAGetLastError() << "\n";
+            break;
+        }
+
+        std::cout << "[SERVER] Sent board (" << data.size() << " bytes)\n";
+
+        game.update();
+        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    }
+
+    closesocket(client);
+    WSACleanup();
     return 0;
 }

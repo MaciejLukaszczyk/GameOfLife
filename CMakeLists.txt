@@ -7,3 +7,6 @@ include_directories(.)
 
 add_executable(GameOfLife
     Game_Of_Life_v1.cpp)
+
+target_link_libraries(GameOfLife ws2_32)
+
