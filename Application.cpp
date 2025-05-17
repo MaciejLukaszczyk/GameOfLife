@@ -16,18 +16,24 @@ void Application::run() {
         size_t rows, cols;
         std::cout << "Enter rows and columns: ";
         if (!(std::cin >> rows >> cols) || rows == 0 || cols == 0) {
-            throw std::invalid_argument("Invalid grid dimensions");
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cerr << "[ERROR] Invalid grid dimensions.\n";
+            return;
         }
+
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // usuń \n po liczbach
 
         GameOfLife game(rows, cols);
 
         // Initialization
         char choice;
         std::cout << "Randomize (y/n)? ";
-        if (!(std::cin >> choice)) {
+        if (!(std::cin >> std::ws >> choice)) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            throw std::runtime_error("Invalid input format");
+            std::cerr << "[ERROR] Invalid input format.\n";
+            return;
         }
 
         if (choice == 'y' || choice == 'Y') {
@@ -36,7 +42,14 @@ void Application::run() {
             std::cout << "Enter cells (row col alive) [-1 to end]:\n";
             int r, c, a;
             while (true) {
-                if (!(std::cin >> r) || r == -1) break;
+                if (!(std::cin >> r)) {
+                    std::cin.clear();
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    std::cerr << "Invalid input format, try again\n";
+                    continue;
+                }
+                if (r == -1) break;
+
                 if (!(std::cin >> c >> a)) {
                     std::cin.clear();
                     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -58,17 +71,24 @@ void Application::run() {
         int delay;
         std::cout << "Iterations and delay (ms): ";
         if (!(std::cin >> iterations >> delay)) {
-            throw std::invalid_argument("Invalid simulation parameters");
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cerr << "[ERROR] Invalid simulation parameters.\n";
+            return;
         }
+
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // pozbycie się \n
 
         // Network and simulation loop
         try {
             NetworkManager nm("127.0.0.1", 12345);
-            nm.connect();
+            nm.connect();  // lub nm.startServer() jeśli zmienisz nazwę
+            std::cout << "[DEBUG] Server connected to client.\n";
 
             for (size_t i = 0; i < iterations; ++i) {
                 try {
                     nm.send(game.serialize());
+                    std::cout << "[DEBUG] Sent iteration " << i << "\n";
                 } catch (const std::exception& e) {
                     std::cerr << "Network error: " << e.what() << " - continuing simulation\n";
                 }
@@ -84,8 +104,13 @@ void Application::run() {
             }
         }
 
+        std::cout << "Simulation ended. Press Enter to close...\n";
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cin.get();
+
     } catch (const std::exception& e) {
         std::cerr << "Fatal error: " << e.what() << "\n";
         std::exit(EXIT_FAILURE);
     }
 }
+

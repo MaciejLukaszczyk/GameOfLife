@@ -1,36 +1,44 @@
-//
-// Created by mluka on 17.05.2025.
-//
-
-#ifndef GAMEOFLIFE_H
-#define GAMEOFLIFE_H
-
-
-
+// === GameOfLife.h ===
 #pragma once
 #include <vector>
 #include <string>
 #include <array>
-#include <stdexcept>
+#include <cstdint>
 
 class GameOfLife {
 public:
+    // Konstruktor inicjalizujący planszę o podanych wymiarach
     GameOfLife(size_t rows, size_t cols);
 
-    void setCell(size_t row, size_t col, bool alive);
+    // Ustawienie stanu konkretnej komórki
+    void setCell(size_t row, size_t col, uint8_t state);
+
+    // Losowe przypisanie stanów do wszystkich komórek
     void randomize();
+
+    // Przejście do kolejnego stanu symulacji
     void update();
+
+    // Serializacja planszy do formatu tekstowego
     std::string serialize() const;
 
-    size_t getRows() const noexcept { return rows_; }
-    size_t getCols() const noexcept { return cols_; }
-
 private:
+    size_t rows_, cols_;
+    std::vector<std::vector<uint8_t>> board_;  // plansza z wieloma stanami
+
+    // Sprawdza, czy współrzędne są w granicach planszy
     bool isValidCell(int row, int col) const noexcept;
+
+    // Zlicza żywe sąsiednie komórki (stan > 0)
     int countAliveNeighbors(size_t row, size_t col) const;
 
-    size_t rows_;
-    size_t cols_;
-    std::vector<std::vector<bool>> board_;
+    // Zlicza sąsiadów o określonych stanach (np. REPRODUCTIVE)
+    int countNeighborsWithState(size_t row, size_t col, const std::vector<uint8_t>& states) const;
 };
-#endif //GAMEOFLIFE_H
+
+// Definicje stanów komórek:
+// 0 - DEAD         (martwa)
+// 1 - YOUNG        (dorastająca)
+// 2 - REPRODUCTIVE (rozpłodowa)
+// 3 - OLD_REPRO    (stara rozpłodowa)
+// 4 - DYING        (umierająca)
