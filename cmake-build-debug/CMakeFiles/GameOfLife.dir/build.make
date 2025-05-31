@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3
+CMAKE_SOURCE_DIR = C:\Users\mluka\CLionProjects\GameOfLife_2.1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GameOfLife.dir/depend.make
@@ -70,63 +70,63 @@ include CMakeFiles/GameOfLife.dir/flags.make
 
 CMakeFiles/GameOfLife.dir/Application.cpp.obj: CMakeFiles/GameOfLife.dir/flags.make
 CMakeFiles/GameOfLife.dir/Application.cpp.obj: CMakeFiles/GameOfLife.dir/includes_CXX.rsp
-CMakeFiles/GameOfLife.dir/Application.cpp.obj: C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/Application.cpp
+CMakeFiles/GameOfLife.dir/Application.cpp.obj: C:/Users/mluka/CLionProjects/GameOfLife_2.1/Application.cpp
 CMakeFiles/GameOfLife.dir/Application.cpp.obj: CMakeFiles/GameOfLife.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameOfLife.dir/Application.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameOfLife.dir/Application.cpp.obj -MF CMakeFiles\GameOfLife.dir\Application.cpp.obj.d -o CMakeFiles\GameOfLife.dir\Application.cpp.obj -c C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameOfLife.dir/Application.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameOfLife.dir/Application.cpp.obj -MF CMakeFiles\GameOfLife.dir\Application.cpp.obj.d -o CMakeFiles\GameOfLife.dir\Application.cpp.obj -c C:\Users\mluka\CLionProjects\GameOfLife_2.1\Application.cpp
 
 CMakeFiles/GameOfLife.dir/Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameOfLife.dir/Application.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\Application.cpp > CMakeFiles\GameOfLife.dir\Application.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mluka\CLionProjects\GameOfLife_2.1\Application.cpp > CMakeFiles\GameOfLife.dir\Application.cpp.i
 
 CMakeFiles/GameOfLife.dir/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameOfLife.dir/Application.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\Application.cpp -o CMakeFiles\GameOfLife.dir\Application.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mluka\CLionProjects\GameOfLife_2.1\Application.cpp -o CMakeFiles\GameOfLife.dir\Application.cpp.s
 
 CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj: CMakeFiles/GameOfLife.dir/flags.make
 CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj: CMakeFiles/GameOfLife.dir/includes_CXX.rsp
-CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj: C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/GameOfLife.cpp
+CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj: C:/Users/mluka/CLionProjects/GameOfLife_2.1/GameOfLife.cpp
 CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj: CMakeFiles/GameOfLife.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj -MF CMakeFiles\GameOfLife.dir\GameOfLife.cpp.obj.d -o CMakeFiles\GameOfLife.dir\GameOfLife.cpp.obj -c C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\GameOfLife.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj -MF CMakeFiles\GameOfLife.dir\GameOfLife.cpp.obj.d -o CMakeFiles\GameOfLife.dir\GameOfLife.cpp.obj -c C:\Users\mluka\CLionProjects\GameOfLife_2.1\GameOfLife.cpp
 
 CMakeFiles/GameOfLife.dir/GameOfLife.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameOfLife.dir/GameOfLife.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\GameOfLife.cpp > CMakeFiles\GameOfLife.dir\GameOfLife.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mluka\CLionProjects\GameOfLife_2.1\GameOfLife.cpp > CMakeFiles\GameOfLife.dir\GameOfLife.cpp.i
 
 CMakeFiles/GameOfLife.dir/GameOfLife.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameOfLife.dir/GameOfLife.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\GameOfLife.cpp -o CMakeFiles\GameOfLife.dir\GameOfLife.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mluka\CLionProjects\GameOfLife_2.1\GameOfLife.cpp -o CMakeFiles\GameOfLife.dir\GameOfLife.cpp.s
 
 CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj: CMakeFiles/GameOfLife.dir/flags.make
 CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj: CMakeFiles/GameOfLife.dir/includes_CXX.rsp
-CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj: C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/NetworkManager.cpp
+CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj: C:/Users/mluka/CLionProjects/GameOfLife_2.1/NetworkManager.cpp
 CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj: CMakeFiles/GameOfLife.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj -MF CMakeFiles\GameOfLife.dir\NetworkManager.cpp.obj.d -o CMakeFiles\GameOfLife.dir\NetworkManager.cpp.obj -c C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\NetworkManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj -MF CMakeFiles\GameOfLife.dir\NetworkManager.cpp.obj.d -o CMakeFiles\GameOfLife.dir\NetworkManager.cpp.obj -c C:\Users\mluka\CLionProjects\GameOfLife_2.1\NetworkManager.cpp
 
 CMakeFiles/GameOfLife.dir/NetworkManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameOfLife.dir/NetworkManager.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\NetworkManager.cpp > CMakeFiles\GameOfLife.dir\NetworkManager.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mluka\CLionProjects\GameOfLife_2.1\NetworkManager.cpp > CMakeFiles\GameOfLife.dir\NetworkManager.cpp.i
 
 CMakeFiles/GameOfLife.dir/NetworkManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameOfLife.dir/NetworkManager.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\NetworkManager.cpp -o CMakeFiles\GameOfLife.dir\NetworkManager.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mluka\CLionProjects\GameOfLife_2.1\NetworkManager.cpp -o CMakeFiles\GameOfLife.dir\NetworkManager.cpp.s
 
 CMakeFiles/GameOfLife.dir/main.cpp.obj: CMakeFiles/GameOfLife.dir/flags.make
 CMakeFiles/GameOfLife.dir/main.cpp.obj: CMakeFiles/GameOfLife.dir/includes_CXX.rsp
-CMakeFiles/GameOfLife.dir/main.cpp.obj: C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/main.cpp
+CMakeFiles/GameOfLife.dir/main.cpp.obj: C:/Users/mluka/CLionProjects/GameOfLife_2.1/main.cpp
 CMakeFiles/GameOfLife.dir/main.cpp.obj: CMakeFiles/GameOfLife.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameOfLife.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameOfLife.dir/main.cpp.obj -MF CMakeFiles\GameOfLife.dir\main.cpp.obj.d -o CMakeFiles\GameOfLife.dir\main.cpp.obj -c C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameOfLife.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameOfLife.dir/main.cpp.obj -MF CMakeFiles\GameOfLife.dir\main.cpp.obj.d -o CMakeFiles\GameOfLife.dir\main.cpp.obj -c C:\Users\mluka\CLionProjects\GameOfLife_2.1\main.cpp
 
 CMakeFiles/GameOfLife.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameOfLife.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\main.cpp > CMakeFiles\GameOfLife.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mluka\CLionProjects\GameOfLife_2.1\main.cpp > CMakeFiles\GameOfLife.dir\main.cpp.i
 
 CMakeFiles/GameOfLife.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameOfLife.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\main.cpp -o CMakeFiles\GameOfLife.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mluka\CLionProjects\GameOfLife_2.1\main.cpp -o CMakeFiles\GameOfLife.dir\main.cpp.s
 
 # Object files for target GameOfLife
 GameOfLife_OBJECTS = \
@@ -146,7 +146,7 @@ GameOfLife.exe: CMakeFiles/GameOfLife.dir/build.make
 GameOfLife.exe: CMakeFiles/GameOfLife.dir/linkLibs.rsp
 GameOfLife.exe: CMakeFiles/GameOfLife.dir/objects1.rsp
 GameOfLife.exe: CMakeFiles/GameOfLife.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable GameOfLife.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable GameOfLife.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GameOfLife.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +158,6 @@ CMakeFiles/GameOfLife.dir/clean:
 .PHONY : CMakeFiles/GameOfLife.dir/clean
 
 CMakeFiles/GameOfLife.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3 C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3 C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\CMakeFiles\GameOfLife.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\mluka\CLionProjects\GameOfLife_2.1 C:\Users\mluka\CLionProjects\GameOfLife_2.1 C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\CMakeFiles\GameOfLife.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/GameOfLife.dir/depend
 

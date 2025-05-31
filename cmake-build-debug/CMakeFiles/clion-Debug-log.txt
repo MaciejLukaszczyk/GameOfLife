@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -DPython_EXECUTABLE=C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/.venv/Scripts/python.exe -DPython3_EXECUTABLE=C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/.venv/Scripts/python.exe -S C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3 -B C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\mluka\CLionProjects\GameOfLife_2.1 -B C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug
 -- The C compiler identification is GNU 13.1.0
 -- The CXX compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
@@ -11,13 +11,6 @@
 -- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2024.3.5/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (3.8s)
--- Generating done (0.0s)
-CMake Warning:
-  Manually-specified variables were not used by the project:
-
-    Python3_EXECUTABLE
-    Python_EXECUTABLE
-
-
--- Build files have been written to: C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/cmake-build-debug
+-- Configuring done (5.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/mluka/CLionProjects/GameOfLife_2.1/cmake-build-debug

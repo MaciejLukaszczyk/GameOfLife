@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3
+CMAKE_SOURCE_DIR = C:\Users\mluka\CLionProjects\GameOfLife_2.1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\CMakeFiles C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\CMakeFiles C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mateuszmroz\CLionProjects\GameOfLife_250518_3\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mluka\CLionProjects\GameOfLife_2.1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

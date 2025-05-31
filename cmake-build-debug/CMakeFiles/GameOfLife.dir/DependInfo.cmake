@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/Application.cpp" "CMakeFiles/GameOfLife.dir/Application.cpp.obj" "gcc" "CMakeFiles/GameOfLife.dir/Application.cpp.obj.d"
-  "C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/GameOfLife.cpp" "CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj" "gcc" "CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj.d"
-  "C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/NetworkManager.cpp" "CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj" "gcc" "CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj.d"
-  "C:/Users/mateuszmroz/CLionProjects/GameOfLife_250518_3/main.cpp" "CMakeFiles/GameOfLife.dir/main.cpp.obj" "gcc" "CMakeFiles/GameOfLife.dir/main.cpp.obj.d"
+  "C:/Users/mluka/CLionProjects/GameOfLife_2.1/Application.cpp" "CMakeFiles/GameOfLife.dir/Application.cpp.obj" "gcc" "CMakeFiles/GameOfLife.dir/Application.cpp.obj.d"
+  "C:/Users/mluka/CLionProjects/GameOfLife_2.1/GameOfLife.cpp" "CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj" "gcc" "CMakeFiles/GameOfLife.dir/GameOfLife.cpp.obj.d"
+  "C:/Users/mluka/CLionProjects/GameOfLife_2.1/NetworkManager.cpp" "CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj" "gcc" "CMakeFiles/GameOfLife.dir/NetworkManager.cpp.obj.d"
+  "C:/Users/mluka/CLionProjects/GameOfLife_2.1/main.cpp" "CMakeFiles/GameOfLife.dir/main.cpp.obj" "gcc" "CMakeFiles/GameOfLife.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
