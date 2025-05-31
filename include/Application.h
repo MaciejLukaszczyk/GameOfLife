@@ -21,11 +21,16 @@ private:
     void finalize();        // Końcowy komunikat
 
     // Pola konfiguracyjne i stan symulacji
-    size_t rows{};
-    size_t cols{};
-    size_t iterations{};
-    int delay{};
-    GameOfLife game{0, 0};
+    size_t rows = 10;
+    //size_t rows{};
+    size_t cols = 10;
+    //size_t cols{};
+    size_t iterations = 1000;
+    //size_t iterations{};
+    int delay = 500;
+    //int delay{};
+    //GameOfLife game;
+    GameOfLife game{50, 50};
 };
 
 #endif // APPLICATION_H

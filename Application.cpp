@@ -20,15 +20,19 @@ void Application::run() {
 
 void Application::init() {
     std::srand(static_cast<unsigned>(std::time(nullptr)));
+    // rows = 10;
+    // cols = 10;
 
-    std::cout << "Enter rows and columns: ";
-    if (!(std::cin >> rows >> cols) || rows == 0 || cols == 0) {
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        throw std::invalid_argument("[ERROR] Invalid grid dimensions.");
-    }
+     std::cout << "Enter rows and columns: ";
+     if (!(std::cin >> rows >> cols) || rows == 0 || cols == 0) {
+         std::cin.clear();
+         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+         throw std::invalid_argument("[ERROR] Invalid grid dimensions.");
 
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+     }
+
+     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
 }
 
 void Application::setupGame() {

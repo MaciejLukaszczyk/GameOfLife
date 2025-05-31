@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\GameOfLife.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\ar.exe qc CMakeFiles\GameOfLife.dir/objects.a @CMakeFiles\GameOfLife.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\GameOfLife.dir/objects.a -Wl,--no-whole-archive -o GameOfLife.exe -Wl,--out-implib,libGameOfLife.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GameOfLife.dir\linkLibs.rsp
